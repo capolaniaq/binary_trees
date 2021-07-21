@@ -1,7 +1,12 @@
 #include "binary_trees.h"
 
-
-
+/**
+ * binary_tree_insert_right - function that insert node in right secction
+ * @parent: pointer to root node
+ * @value: integer to save in new node
+ *
+ * Return: pointer to new node
+ */
 
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
