@@ -29,7 +29,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 		height_left = binary_tree_height_perfect(tree->left);
 	if (tree->right != NULL)
 		height_right = binary_tree_height_perfect(tree->right);
-	if ((height_right != height_left))
+	if (height_right != height_left)
 		return (0);
 	return (perfect);
 
