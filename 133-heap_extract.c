@@ -17,6 +17,11 @@ int heap_extract(heap_t **root)
 		return (0);
 
 	data = (*root)->n;
+	if ((*root)->left == NULL && (*root)->right == NULL)
+	{
+		free(*root);
+		return (data);
+	}
 	last_leaf = sort_values(root);
 	del_leaf = find_last_leaf(root);
 
