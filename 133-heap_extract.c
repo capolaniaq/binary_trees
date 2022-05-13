@@ -19,7 +19,6 @@ int heap_extract(heap_t **root)
 	data = (*root)->n;
 	if ((*root)->left == NULL && (*root)->right == NULL)
 	{
-		free(*root);
 		return (data);
 	}
 	last_leaf = sort_values(root);
